@@ -87,4 +87,4 @@ network.
 
 ---
 
-*Completed as part of the Cybersecurity Internship — Task 3.*
+*Completed as part of the Cybersecurity Internship at CodeAlpha — Task 3.*
