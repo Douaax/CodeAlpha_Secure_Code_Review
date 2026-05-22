@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+<head><title>VulnNotes</title></head>
+<body>
+  <h1>VulnNotes</h1>
+  {% if user %}
+    <p>Hello, {{ user }} — <a href="/notes">My notes</a> | <a href="/logout">Logout</a></p>
+  {% else %}
+    <p><a href="/login">Login</a></p>
+  {% endif %}
+</body>
+</html>

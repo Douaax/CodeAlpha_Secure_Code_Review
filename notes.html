@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head><title>My Notes</title></head>
+<body>
+  <h1>Notes</h1>
+  <form method="GET" action="/notes">
+    <input name="q" placeholder="Search title..." />
+    <button type="submit">Search</button>
+  </form>
+
+  <ul>
+  {% for n in notes %}
+    <li>
+      <strong>{{ n.title|safe }}</strong>: {{ n.body|safe }}
+      <a href="/note/{{ n.id }}">view</a>
+    </li>
+  {% endfor %}
+  </ul>
+
+  <h2>New note</h2>
+  <form method="POST" action="/note/new">
+    <input name="title" placeholder="Title" /><br/>
+    <textarea name="body" placeholder="Body"></textarea><br/>
+    <button type="submit">Save</button>
+  </form>
+</body>
+</html>

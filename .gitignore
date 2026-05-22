@@ -1,0 +1,28 @@
+# Python virtual environments
+venv/
+env/
+.venv/
+
+# Python cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+
+# Local SQLite database (created at runtime)
+*.db
+*.sqlite
+*.sqlite3
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*~
+
+# Local environment files (just in case)
+.env
+.envrc
